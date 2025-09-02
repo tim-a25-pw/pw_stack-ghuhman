@@ -6,14 +6,17 @@
 $breakpoint-xs: 375px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 1024px;
-$breakpoint-ml: 1200px;
+$breakpoint-ml: 1110px;
 $breakpoint-lg: 1440px;
 $breakpoint-xl: 1920px;
 
 :root {
-    --spacing-xs: 1rem;
-    --spacing-sm: 2rem;
-    --spacing-md: 4rem;
-    --spacing-lg: 6rem;
+    --spacing-xs: 10px;
+    --spacing-sm: 20px;
+    --spacing-sd: 30px;
+    --spacing-md: 40px;
+    --spacing-lg: 60px;
+    --spacing-xl: 100px;
+
     --grid-gap: 30px;
 }

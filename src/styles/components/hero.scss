@@ -1,0 +1,46 @@
+.hero{
+    position: relative;
+    height: 100%;
+
+    color: var(--color-white);
+
+    padding: 200px 0;
+
+    .wrapper{
+        height: 100%;
+    }
+
+    .hero_media{
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        img{
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+    }
+
+    .hero_content{
+        width: 50%;
+    }
+
+    p{
+        margin: var(--spacing-sd) 0;
+    }
+
+    .h1_bold{
+        font-weight: 600;
+    }
+
+    .h1_italic{
+        font-style: italic;
+    }
+}

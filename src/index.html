@@ -1,61 +1,84 @@
-{% include '_partials/_header.html' %}
-
-<!-- Header -->
-
-<a href="#">
-    <svg class="icon">
-        <use xlink:href="#icon-logo"></use>
-    </svg>
-    tim canada
-</a>
-<nav>
-    <ul>
-        <li><a href="#">Athlètes</a></li>
-        <li><a href="#">Disciplines</a></li>
-        <li><a href="#">Programmes</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+{% include '_partials/_header.html' with { title: "Accueil"} %}
 
 <!-- Hero -->
+<section class="hero">
+    <div class="wrapper">
 
-<img src="assets/images/bg-hero.jpg" alt="Skieur étoile" />
-<h1>
-    La crème
-    <br />
-    de la crème
-</h1>
-<p>
-    Votre rêve de p’tit cul est sur le point de se réaliser. Vous avez toujours rêvé de performer autant sur les internets que sur une surface glacée.
-    Saississez votre chance dès aujourd’hui et joignez l’équipe de timCanada afin de vous dépasser dans un environement sécurisé et serein.
-</p>
-<a href="#" class="button">Joignez notre équipe</a>
+        <div class="hero_media">
+            <img src="assets/images/bg-hero.jpg" alt="Skieur étoile" />
+        </div>
+
+        <div class="hero_content">
+            <h1>
+                La <span class="h1_bold">crème</span>
+                <br />
+                de la <span class="h1_italic">crème</span>
+            </h1>
+            <p>
+                Votre rêve de p’tit cul est sur le point de se réaliser. Vous avez toujours rêvé de performer autant sur les internets que sur une surface glacée.
+                Saississez votre chance dès aujourd’hui et joignez l’équipe de timCanada afin de vous dépasser dans un environement sécurisé et serein.
+            </p>
+            <a href="#" class="button">Joignez notre équipe</a>
+        </div>
+
+    </div>
+</section>
+
 
 <!-- Athlètes -->
+<section class="section athletes">
+    <div class="wrapper">
 
-<h2>Nos athlètes</h2>
-<p>
-    Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos), ils perfoment
-    toujours à leur maximum.
-</p>
+        <h2>Nos athlètes</h2>
+        <div class="athletes_intro">
+            <p>
+                Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos), ils perfoment
+                toujours à leur maximum.
+            </p>
+        </div>
+        
+        <div class="cards">
+            
+            <div class="card">
+                <div class="card_media">
+                    <img src="assets/images/matt-pratt.jpg" alt="" />
+                </div>
+                <div class="card_content">
+                    <h3>Matt Pratt</h3>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-snow"></use>
+                    </svg>
+                </div>
+            </div>
 
-<img src="assets/images/matt-pratt.jpg" alt="" />
-<h3>Matt Pratt</h3>
-<svg class="icon">
-    <use xlink:href="#icon-snow"></use>
-</svg>
+            <div class="card">
+                <div class="card_media">
+                    <img src="assets/images/ben-lavigne.jpg" alt="" />
+                </div>
+                <div class="card_content">
+                    <h3>Ben Lavigne</h3>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-skate"></use>
+                    </svg>
+                </div>
+            </div>
 
-<img src="assets/images/ben-lavigne.jpg" alt="" />
-<h3>Ben Lavigne</h3>
-<svg class="icon">
-    <use xlink:href="#icon-skate"></use>
-</svg>
+            <div class="card">
+                <div class="card_media">
+                    <img src="assets/images/jeff-white.jpg" alt="" />
+                </div>
+                <div class="card_content">
+                    <h3>Jeff White</h3>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-ski"></use>
+                    </svg>
+                </div>
+            </div>
 
-<img src="assets/images/jeff-white.jpg" alt="" />
-<h3>Jeff White</h3>
-<svg class="icon">
-    <use xlink:href="#icon-ski"></use>
-</svg>
+        </div>
+    </div>
+</section>
+
 
 <!-- Gallery -->
 

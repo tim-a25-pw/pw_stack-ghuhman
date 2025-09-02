@@ -1,0 +1,19 @@
+.athletes{
+    //text-align: right;
+
+    .athletes_intro{
+        display: flex;
+        justify-content: flex-end;
+        margin: var(--spacing-sd) 0;
+
+        p{
+            width: 66%;
+        }
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--grid-gap);
+    }
+}

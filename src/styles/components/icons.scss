@@ -1,0 +1,44 @@
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    flex: 0 0 auto;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+    stroke: transparent;
+}
+
+.icon--stroke {
+    fill: transparent;
+    stroke: currentColor;
+}
+
+.icon--xxs {
+    height: 0.6em;
+    width: 0.6em;
+}
+
+.icon--xs {
+    height: 0.75em;
+    width: 0.75em;
+}
+
+.icon--sm {
+    height: 1em;
+    width: 1em;
+}
+
+.icon--md {
+    height: 1.4em;
+    width: 1.4em;
+}
+
+.icon--lg {
+    height: 2.75em;
+    width: 2.75em;
+}
+
+.icon--xl {
+    height: 7.5em;
+    width: 7.5em;
+}

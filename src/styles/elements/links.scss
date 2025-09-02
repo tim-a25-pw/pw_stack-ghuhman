@@ -6,10 +6,12 @@
 a {
     color: var(--color-primary);
     text-decoration: none;
+    transition: $transition-custom; // tra
+
 
     &:hover {
         color: var(--color-primary);
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     &.disabled {
