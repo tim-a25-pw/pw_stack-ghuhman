@@ -1,0 +1,38 @@
+/* ==========================================================================
+   carousel / component
+   ========================================================================== */
+
+.swiper {
+    --size-pagination: 24px;
+    --size-pagination-gap: 20px;
+
+    margin: 0;
+    width: 100%;
+    position: relative;
+
+    .swiper-pagination-bullets {
+        --size-pagination: 24px;
+        --size-pagination-gap: 10px;
+
+        gap: var(--size-pagination-gap);
+        display: flex;
+        flex-direction: column;
+        right: var(--spacing-sd);
+
+        .swiper-pagination-bullet {
+            border: 0px solid var(--color-black);
+            background-color: var(--color-black);
+            width: var(--size-pagination);
+            height: var(--size-pagination);
+            border-radius: 100%;
+            opacity: 1;
+            transition: $transition-custom; // tra
+            margin: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            border: 12px solid var(--color-primary);
+            background-color: var(--color-black);
+        }
+    }
+}

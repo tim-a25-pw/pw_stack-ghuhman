@@ -1,6 +1,9 @@
 //FONTS
 // ici sont chargé les fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&family=PT+Sans:wght@400;700&display=swap');
+
+@import '../../node_modules/swiper/swiper-bundle';
+
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 @import 'tools/cover';
@@ -35,6 +38,9 @@
 @import 'components/section';
 @import 'components/athletes';
 @import 'components/cards';
+@import 'components/gallerie';
+@import 'components/carousel';
+
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
