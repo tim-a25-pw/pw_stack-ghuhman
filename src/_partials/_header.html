@@ -10,9 +10,9 @@
         <script src="scripts/main.js" defer></script>
     </head>
 
-    <body>
+    <body data-component="Scrolly" data-no-repeat>
 
-        <header class="header">
+        <header class="header" data-component="Header" data-threshold="0.25">
             <div class="wrapper">
 
                 <a href="#" class="logo">
@@ -21,7 +21,7 @@
                     </svg>tim québec
                 </a>
 
-                <nav>
+                <nav class="nav-primary">
                     <ul class="liens_header">
                         <li><a href="#" class="lien_header">Athlètes</a></li>
                         <li><a href="#" class="lien_header">Disciplines</a></li>
@@ -29,6 +29,12 @@
                         <li><a href="#" class="lien_header">Contact</a></li>
                     </ul>
                 </nav>
+
+                <button class="bouton_mobile js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
             </div>
         </header>

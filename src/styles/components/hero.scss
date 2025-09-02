@@ -43,4 +43,16 @@
     .h1_italic{
         font-style: italic;
     }
+
+    @media screen and (max-width: $breakpoint-md) {
+        .hero_content{
+            width: 75%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .hero_content{
+            width: 100%;
+        }
+    }
 }

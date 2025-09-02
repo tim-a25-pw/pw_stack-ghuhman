@@ -25,19 +25,14 @@ export default class Header {
   }
 
   setOptions() {
-    //
-    //console.log(this.element.dataset);
     if ('threshold' in this.element.dataset) {
       this.options.threshold = this.element.dataset.threshold;
-      //console.log('threshold : ' + this.options.threshold);
     }
   }
 
   onScroll() {
-    //console.log('Scoll');
     this.lastScrollPosition = this.scrollPosition;
     this.scrollPosition = document.scrollingElement.scrollTop;
-    //console.log(this.scrollPosition, this.lastScrollPosition);
 
     this.setHeaderState();
     this.setDirections();
@@ -59,7 +54,7 @@ export default class Header {
       !this.html.hasAttribute('data-always-show')
     ) {
       this.html.classList.add('header-is-hidden');
-    } /*if(this.scrollPosition > this.lastScrollPosition)*/ else {
+    } else {
       this.html.classList.remove('header-is-hidden');
     }
   }
@@ -76,7 +71,6 @@ export default class Header {
 
   initNavMobile() {
     const toggle = this.element.querySelector('.js-toggle');
-    //console.log(toggle);
     toggle.addEventListener('click', this.onToggleNav.bind(this));
   }
 
