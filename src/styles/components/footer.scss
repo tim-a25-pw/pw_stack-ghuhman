@@ -1,0 +1,33 @@
+.footer{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-bottom: var(--spacing-sm);
+    text-align: center;
+
+    a{
+        color: var(--color-white);
+    }
+
+    .liens_footer{
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-sm);
+        list-style: none;
+        margin: var(--spacing-sm) 0;
+        padding: 0;
+        //background-color: var(--color-white);
+        //opacity: 0.1;
+    }
+
+    .lien_footer{
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+}
